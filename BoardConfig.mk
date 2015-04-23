@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/acer/s56
+LOCAL_PATH := device/acer/s57
 
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/acer/s56/BoardConfigVendor.mk
+-include vendor/acer/s57/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := S56
+TARGET_BOOTLOADER_BOARD_NAME := s57
 TARGET_OTA_ASSERT_DEVICE :=
 
 BOARD_HAS_FLIPPED_SCREEN := true
@@ -49,7 +49,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-TARGET_BOOTLOADER_BOARD_NAME := S56
+TARGET_BOOTLOADER_BOARD_NAME := s57
 
 WITH_DEXPREOPT := true
 
@@ -95,13 +95,13 @@ USE_OPENGL_RENDERER := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 TARGET_DISABLE_TRIPLE_BUFFERING := false
-BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s56/recovery/graphics.cwm.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s57/recovery/graphics.cwm.c
 
 #TWRP
 #RECOVERY_VARIANT := twrp
 #TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/recovery.twrp.rc
 #TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.twrp.fstab
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s56/recovery/graphics.twrp.c
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s57/recovery/graphics.twrp.c
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
